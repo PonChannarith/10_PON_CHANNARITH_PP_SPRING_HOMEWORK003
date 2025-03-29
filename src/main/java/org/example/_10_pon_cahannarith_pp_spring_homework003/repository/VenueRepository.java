@@ -22,9 +22,8 @@ public interface VenueRepository {
         """)
     List<Venue> getAllVenue(int offset,int size);
 
-    List<Venue> getAllVenue();
 
-//    List<Venue> getAllVenue();
+    List<Venue> getAllVenue();
 
 
 }
