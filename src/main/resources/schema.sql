@@ -22,9 +22,6 @@ CREATE TABLE events (
 SELECT * FROM venues;
 SELECT * FROM venues WHERE venue_id IN (1, 2, 3, 4, 5);
 
--- Step 5: Insert events using the correct venue_id values
--- Adjust venue_id if needed based on the previous SELECT result
-
 
 -- Create attendees table
 CREATE TABLE attendees (
@@ -34,10 +31,10 @@ CREATE TABLE attendees (
 );
 --
 -- -- Create event_attendee table (junction table for many-to-many relationship)
--- CREATE TABLE event_attendee (
---                                 id SERIAL PRIMARY KEY,
---                                 event_id INT NOT NULL,
---                                 attendee_id INT NOT NULL,
---                                 FOREIGN KEY (event_id) REFERENCES events(event_id) ON DELETE CASCADE,
---                                 FOREIGN KEY (attendee_id) REFERENCES attendees(attendee_id) ON DELETE CASCADE
--- );
+CREATE TABLE event_attendee (
+                                id SERIAL PRIMARY KEY,
+                                event_id INT NOT NULL,
+                                attendee_id INT NOT NULL,
+                                FOREIGN KEY (event_id) REFERENCES events(event_id) ON DELETE CASCADE,
+                                FOREIGN KEY (attendee_id) REFERENCES attendees(attendee_id) ON DELETE CASCADE
+);

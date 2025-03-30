@@ -13,4 +13,6 @@ public class Event {
     private String eventDate;
     private Venue venue;
 
+    public void setVenueId(Venue venueId) {
+    }
 }

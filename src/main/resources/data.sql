@@ -22,3 +22,11 @@ INSERT INTO attendees (attendee_name, email) VALUES
                                                  ('Alice Johnson', 'alicej@example.com'),
                                                  ('Bob Brown', 'bobbrown@example.com'),
                                                  ('Charlie Davis', 'charlied@example.com');
+
+INSERT INTO event_attendee (event_id, attendee_id)
+VALUES
+
+    (1, 102),
+    (2, 103),
+    (3, 104),
+    (4, 105);
