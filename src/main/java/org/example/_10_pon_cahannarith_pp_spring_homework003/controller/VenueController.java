@@ -51,7 +51,6 @@ public class VenueController {
     public ResponseEntity<Map<String, Object>> saveVenue(@RequestBody VenueRequest request) {
         // Save venue using the service and get the response
         Venue savedVenue = venueService.saveVenue(request);
-
         // Construct response
         Map<String, Object> response = new LinkedHashMap<>();
         response.put("message", "The venue has been successfully added.");

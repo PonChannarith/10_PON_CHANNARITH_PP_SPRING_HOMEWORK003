@@ -11,6 +11,5 @@ public class VenueRequest {
         private String location;
 
 
-//        public void setVenueId(Long venueId) {
-//        }
+
 }

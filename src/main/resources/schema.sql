@@ -18,6 +18,14 @@ CREATE TABLE events (
                         REFERENCES venues(venue_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+
+SELECT * FROM venues;
+SELECT * FROM venues WHERE venue_id IN (1, 2, 3, 4, 5);
+
+-- Step 5: Insert events using the correct venue_id values
+-- Adjust venue_id if needed based on the previous SELECT result
+
+
 -- Create attendees table
 CREATE TABLE attendees (
                            attendee_id SERIAL PRIMARY KEY,
