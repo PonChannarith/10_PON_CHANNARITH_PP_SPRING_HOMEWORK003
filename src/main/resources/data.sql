@@ -4,3 +4,6 @@ INSERT INTO venues(venue_name, location) VALUES
                                              ('Channareak', 'Kampong Speu'),
                                              ('Chansreyleak', 'Kampong Cham'),
                                              ('Channara', 'Kampong Chhnang');
+
+
+

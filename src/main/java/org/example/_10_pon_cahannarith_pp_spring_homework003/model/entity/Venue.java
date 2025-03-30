@@ -6,7 +6,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Venue {
-    private Long venueId;
+    private Integer venueId;
     private String venueName;
     private String location;
 
